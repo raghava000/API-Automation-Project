@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "2534",
+      "Title": "New Product",
+      "Price": 29.99,
+      "Description": "This is a new product.",
+      "Image URL": "https://example.com/product.jpg",
+      "Category": "electronics"
+    },
+    {
+      "id": "28e0",
+      "Title": "New Product",
+      "Price": 29.99,
+      "Description": "This is a new product.",
+      "Image URL": "https://example.com/product.jpg",
+      "Category": "electronics"
+    },
+    {
+      "id": "0acf",
+      "Title": "New Product",
+      "Price": "29.99",
+      "Description": "This is a new product.",
+      "Image URL": "https://example.com/product.jpg",
+      "Category": "electronics"
+    },
+    {
+      "id": "f542",
+      "Title": "New Product",
+      "Price": "29.99",
+      "Description": "This is a new product.",
+      "Image URL": "https://example.com/product.jpg",
+      "Category": "electronics"
+    },
+    {
+      "id": "e839",
+      "Title": "New Product",
+      "Price": "29.99",
+      "Description": "This is a new product.",
+      "Image URL": "https://example.com/product.jpg",
+      "Category": "electronics"
+    }
+  ]
+}

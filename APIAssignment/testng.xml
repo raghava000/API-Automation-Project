@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite" allow-return-values="true">
+    <test name="MyTests">
+        <classes>
+            <class name="com.edureka.APIAssignment.ProductAPITest" />
+            <class name="com.edureka.APIAssignment.updateProductInformation"/>
+        </classes>
+    </test>
+   
+</suite>

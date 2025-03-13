@@ -1,0 +1,7 @@
+{
+"title": "Test Product",
+ "Price": "100.99",
+ "Description": "This is a new product.",
+ "Image URL": "https://example.com/product.jpg",
+ "Category": "electronics"
+}

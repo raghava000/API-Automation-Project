@@ -1,0 +1,18 @@
+
+Using restassured methods 
+
+We have created a new method for creating new product(post method) which catches and hold the result json values.All this will be in the test annotation and we used testng import to use this.
+
+what ever value we caught in the creating new product method we used that value to extract the json values using get method.
+                  
+we have created a different class to handle the updating information 
+
+this updating information is nothing whatever we got the details frm the creating new product are updated and stored in a new json
+
+finally whenever i run a testng.xml which have all these classes we get the new json with updated values.
+
+adding to the top of the cream I have added a delete method for the updated values of the json in the create new product class, so whenever i run the testng.xml the old values are not seen only yhe new json values are seen.
+
+to handle all these logics i used a node js server which have all these methods
+
+
