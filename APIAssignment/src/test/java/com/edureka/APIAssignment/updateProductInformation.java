@@ -19,7 +19,7 @@ public class updateProductInformation { // Defines the class for updating produc
 
     @BeforeClass // Runs before any test method in this class.s
     public void setup() throws IOException {
-        // Creates a new instance of ProductAPITest.
+        // Creates a new instance of ProductAPITestss.
         ProductAPITest = new ProductAPITest();
         
         // Calls setupAndInitialize() from ProductAPITest to ensure the baseURI is set and a product is created.
