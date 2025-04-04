@@ -17,7 +17,7 @@ public class updateProductInformation { // Defines the class for updating produc
     
     private ProductAPITest ProductAPITest; // Creates an instance of ProductAPITest to access its methods and variables.
 
-    @BeforeClass // Runs before any test method in this class.
+    @BeforeClass // Runs before any test method in this class.s
     public void setup() throws IOException {
         // Creates a new instance of ProductAPITest.
         ProductAPITest = new ProductAPITest();
