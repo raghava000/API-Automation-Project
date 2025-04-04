@@ -2,10 +2,10 @@ name: API Automation Tests
 
 on:  
   push:  
-    branches: [main]  
+    branches: [master]  
   pull_request:  
-    branches: [main]  
-
+    branches: [master]  
+  workflow_dispatch:  # Allows manual trigger
 jobs:  
   test:  
     runs-on: ubuntu-latest  
