@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use(express.json());
 
-const dataFilePath = '/Users/raghava/eclipse-workspace/APIAssignment/src/test/resources/custom-mock-server/custom-mock-server/data/products.json';
+const dataFilePath = path.join(__dirname, 'data', 'products.json');
 
 // POST /products/ route handler
 app.post('/products/', (req, res) => {
