@@ -28,13 +28,13 @@ jobs:
 
       - name: Install Node.js dependencies  
         run: npm install  
-        working-directory: ./APIAssignment  # Adjust if your package.json is elsewhere
+        working-directory: ./APIAssignment/src/test/resources/custom-mock-server/custom-mock-server
 
       - name: Start Node.js Server  
         run: |
-          nohup node server.js &  
+          nohup node index.js &  
           sleep 10  
-        working-directory: ./APIAssignment
+        working-directory: ./APIAssignment/src/test/resources/custom-mock-server/custom-mock-server
 
       - name: Install Maven Dependencies  
         run: mvn install  
