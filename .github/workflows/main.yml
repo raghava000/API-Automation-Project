@@ -32,9 +32,12 @@ jobs:
 
       - name: Start Node.js Server  
         run: |
-          nohup node index.js &  
+          nohup node index.js > nohup.out 2>&1 &
           sleep 10  
         working-directory: ./APIAssignment/src/test/resources/custom-mock-server/custom-mock-server
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:3000/products
 
       - name: Install Maven Dependencies  
         run: mvn install  
