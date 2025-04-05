@@ -54,3 +54,8 @@ jobs:
         run: |
             ps aux | grep node
             netstat -tlnp
+
+      - name: Debug – Check Node Server Logs
+        run: |
+            cat nohup.out || echo "No logs found"
+
