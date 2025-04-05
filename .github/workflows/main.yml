@@ -6,6 +6,7 @@ on:
   pull_request:  
     branches: [master]  
   workflow_dispatch:  # Allows manual trigger
+
 jobs:  
   test:  
     runs-on: ubuntu-latest  
@@ -20,16 +21,31 @@ jobs:
           distribution: 'temurin'  
           java-version: '17'  
 
-      - name: Install Dependencies  
-        run: mvn install 
-        working-directory: APIAssignment
+      - name: Set up Node.js  
+        uses: actions/setup-node@v3  
+        with:  
+          node-version: '18'  
+
+      - name: Install Node.js dependencies  
+        run: npm install  
+        working-directory: ./APIAssignment  # Adjust if your package.json is elsewhere
+
+      - name: Start Node.js Server  
+        run: |
+          nohup node server.js &  
+          sleep 10  
+        working-directory: ./APIAssignment
+
+      - name: Install Maven Dependencies  
+        run: mvn install  
+        working-directory: ./APIAssignment
 
       - name: Run API Tests  
         run: mvn test -DsuiteXmlFile=testng.xml  
-        working-directory: APIAssignment
+        working-directory: ./APIAssignment
 
       - name: Upload Test Reports  
         uses: actions/upload-artifact@v4  
         with:  
           name: test-reports  
-          path: target/surefire-reports  
+          path: ./APIAssignment/target/surefire-reports
