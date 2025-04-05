@@ -49,3 +49,8 @@ jobs:
         with:  
           name: test-reports  
           path: ./APIAssignment/target/surefire-reports
+
+      - name: Debug – Show Running Node Logs  
+        run: |
+            ps aux | grep node
+            netstat -tlnp
