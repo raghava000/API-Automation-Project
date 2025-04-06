@@ -9,6 +9,10 @@ app.use(express.json());
 
 const dataFilePath = path.join(__dirname, 'data', 'products.json');
 
+app.get('/', (req, res) => {
+  res.send('Server running');
+});
+
 // POST /products/ route handler
 app.post('/products/', (req, res) => {
     fs.readFile(dataFilePath, (err, data) => {
