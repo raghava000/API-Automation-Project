@@ -41,7 +41,7 @@ public class ProductAPITest { // Defines the class for API testing.
     @Test // Marks this method as a TestNG test case.
     public void createNewProduct() throws IOException {
         // Path to the JSON file containing product data.
-        File jsonFile = new File("/Users/raghava/eclipse-workspace/APIAssignment/src/test/resources/Addnewproduct.json");
+        File jsonFile = new File("src/test/resources/Addnewproduct.json");
 
         // Reads the file content into a string with UTF-8 encoding.
         String jsonContent = FileUtils.readFileToString(jsonFile, StandardCharsets.UTF_8);
