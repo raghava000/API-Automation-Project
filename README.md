@@ -9,7 +9,7 @@ This is a real-world **API automation testing framework** built using **Java, Re
 
 ## 🚀 Project Structure
 
-APIAssignment/ │ ├── src/test/java/com/edureka/APIAssignment/ │ ├── ProductAPITest.java # Tests product CRUD operations on a custom server │ └── UserManagementAPITesting.java # Tests user creation, validation, and login on fakestoreapi.com │ ├── src/test/resources/ │ ├── Addnewproduct.json # Payload for adding a new product │ └── JsonFiles.json # Payload for creating a new user │ ├── .github/workflows/ │ └── ci.yml # GitHub Actions CI pipeline for running tests │ └── README.md # This file!
+APIAssignment/ │ src/test/java/com/edureka/APIAssignment/ │ ProductAPITest.java # Tests product CRUD operations on a custom server │ UserManagementAPITesting.java # Tests user creation, validation, and login on fakestoreapi.com │ src/test/resources/ │ Addnewproduct.json # Payload for adding a new product │ JsonFiles.json # Payload for creating a new user │ .github/workflows/ │ ci.yml # GitHub Actions CI pipeline for running tests │ README.md # This file!
 
 
 
