@@ -64,9 +64,19 @@ Targets `https://fakestoreapi.com` and covers:
 ### ▶ Pre-requisites
 
 - Java 8+
+  - [Download Java](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+  - Ensure `JAVA_HOME` is set in your environment variables.
 - Maven
+  - [Download Maven](https://maven.apache.org/download.cgi)
+  - Verify by running: `mvn -version`- 
 - TestNG
+  - [Install TestNG in Eclipse](https://www.toolsqa.com/testng/install-testng-in-eclipse/)
 - Node.js (for mock server)
+  - Install via terminal: `npm install -g json-server`
+  - Run your mock server:
+     ```bash
+     json-server --watch db.json --port 3000
+     ```-
 - Internet (for Fakestore API)
 
 ###  Steps
@@ -87,8 +97,6 @@ mvn test
 
 ⚙ CI/CD Pipeline (GitHub Actions)
 Runs test suite on every push and pull_request
-
-Uses a matrix to run on multiple Java versions
 
 Fails the pipeline if any test fails
 
